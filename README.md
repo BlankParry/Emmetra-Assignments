@@ -143,7 +143,7 @@ Required Python Libraries:
 
 2. In your terminal/command prompt, navigate to the project directory using `cd '.\Emmetra-Assignments\Assignment 3\'`
    
-   Then run `pip install -r requirements.txt`
+   Then run `pip install -r requirements.txt` to install all the required libraries.
 
 3. The default input images referenced in the code can be found in the **test-data** folder. If you wish to use your own images, update the filenames in **HDR_Imaging.py** accordingly to match your image file names.
 

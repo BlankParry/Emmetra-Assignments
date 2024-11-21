@@ -132,9 +132,9 @@ For Assignment 3:
 
 
 
-Execute the main script (HDR_Imaging.py), which automatically starts the Streamlit application:
+4. Execute the main script (HDR_Imaging.py), which automatically starts the Streamlit application:
 python HDR_Imaging.py
-The Streamlit application will open in your default browser (or provide a URL in the terminal to access it).
+5. The Streamlit application will open in your default browser (or provide a URL in the terminal to access it).
 
 
 
@@ -148,7 +148,7 @@ The Streamlit application will open in your default browser (or provide a URL in
 
 
 
-Use the View Debevec Output, View Robertson Output and View Mertens Output buttons to explore the HDR outputs.
+6. Use the View Debevec Output, View Robertson Output and View Mertens Output buttons to explore the HDR outputs.
 
 
 

@@ -3,7 +3,7 @@
 
 
 
-PREREQUISITES:
+**PREREQUISITES:**
 
 Matlab Version: MATLAB 2019a or higher
 

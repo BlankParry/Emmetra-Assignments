@@ -149,15 +149,15 @@ Required Python Libraries:
 
 ![instr](https://github.com/user-attachments/assets/3aa5c034-523f-4481-9cc0-3ff32af3592d)
 
-(ENSURE THAT THE IMAGE FILES ARE PRESENT IN THE SAME DIRECTORY AS THE **HDR_Imaging.py** FILE. IF NOT, USE ABSOLUTE/RELATIVE FILE PATHS TO REFERENCE THE IMAGES IN YOUR CODE.)
+(Ensure that the image files are present in the same directory as the **HDR_Imaging.py** file. If not, use absolute/relative file paths to reference the images in your code.)
 
 
 
+4. Run `cd '.\src\'` in terminal/command prompt to navigate to the source code directory.
 
-4. Execute the main script (HDR_Imaging.py), which automatically starts the Streamlit application:
-`python HDR_Imaging.py`
+5. Execute the main script (HDR_Imaging.py) using the command `python HDR_Imaging.py`, which automatically starts the Streamlit application.
 
-5. The Streamlit application will open in your default browser (or provide a URL in the terminal to access it).
+6. The Streamlit application will open in your default browser (or provide a URL in the terminal to access it).
 
 ![streamlit_UI](https://github.com/user-attachments/assets/17f6c929-e98b-42b1-8a22-6587cb193c96)
 

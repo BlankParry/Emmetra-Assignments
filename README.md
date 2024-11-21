@@ -3,6 +3,7 @@
 
 
 
+
 **PREREQUISITES:**
 
 Matlab Version: MATLAB 2019a or higher
@@ -23,7 +24,7 @@ Required Python Libraries:
 
 
 
-PROCEDURE:
+**PROCEDURE:**
 
 1. Open MATLAB.
 2. Click on Add-Ons.
@@ -52,13 +53,14 @@ PROCEDURE:
 
  
 4. Close the Add-on Explorer.
+
 5. Open the respective file containing the code and click on Run in the Editor tab.
 
 ![runar](https://github.com/user-attachments/assets/4d991cf1-7576-4969-baaf-d0e660a8ef0e)
 
 
 
-For Assignment 1:
+**For Assignment 1:**
 
 ![as1base](https://github.com/user-attachments/assets/755a7204-8e90-4377-a9be-5a457eda513b)
 
@@ -99,7 +101,7 @@ For Assignment 1:
 
 
 
-For Assignment 2:
+**For Assignment 2:**
 
 ![as2base](https://github.com/user-attachments/assets/e4f9342b-3f10-4f47-acec-cbc0e2ac9064)
 
@@ -128,7 +130,7 @@ For Assignment 2:
 
 
 
-For Assignment 3:
+**For Assignment 3:**
 
 1. Clone or download the project.
 

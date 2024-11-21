@@ -13,7 +13,8 @@ MATLAB Add-Ons:
 - Deep Learning Toolbox
 - Parallel Computing Toolbox
 
-Python (Version used: 3.8.0)
+Python Version Required: 
+Python 3.8.0 or higher
 
 Required Python Libraries: 
 - OpenCV (Version used: 4.10.0.84 )

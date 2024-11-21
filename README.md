@@ -137,7 +137,7 @@ Required Python Libraries:
 2. Open a terminal or command prompt, navigate to the project directory, and run:
  `pip install -r requirements.txt`
 
-3. Ensure the input images are placed in the same directory as the code files. The default input images referenced in the code can be found in the test_data folder. If you wish to use your own images, update the filenames in HDR_Imaging.py accordingly to match your image file names.
+3. Ensure the input images are placed in the same directory as the code files. The default input images referenced in the code can be found in the **Test Data** folder. If you wish to use your own images, update the filenames in **HDR_Imaging.py** accordingly to match your image file names.
 
 
 ![instr](https://github.com/user-attachments/assets/b542668e-f377-4677-8076-4b4d97c14535) 

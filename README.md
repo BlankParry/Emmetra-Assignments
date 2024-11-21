@@ -137,10 +137,12 @@ Required Python Libraries:
 **For Assignment 3:**
 
 1. Clone or download the project.
+   
    (To clone run `git clone https://github.com/BlankParry/Emmetra-Assignments` in your terminal/command prompt).
 
 
-2. Open a terminal or command prompt, and then navigate to the project directory using `cd '.\Emmetra-Assignments\Assignment 3\'`
+2. In your terminal/command prompt, navigate to the project directory using `cd '.\Emmetra-Assignments\Assignment 3\'`
+   
    Then run `pip install -r requirements.txt`
 
 3. Ensure the input images are placed in the same directory as the code files. The default input images referenced in the code can be found in the **Test Data** folder. If you wish to use your own images, update the filenames in **HDR_Imaging.py** accordingly to match your image file names.

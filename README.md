@@ -8,14 +8,22 @@ PREREQUISITES:
 Matlab Version: MATLAB 2019a or higher
 
 MATLAB Add-Ons:
- 1.Image Processing Toolbox
- 2.Deep Learning Toolbox
- 3.Parallel Computing Toolbox
+ 1. Image Processing Toolbox
+ 2. Deep Learning Toolbox
+ 3. Parallel Computing Toolbox
+
+Python Version: Python 3.8 or later
+
+Required Python Libraries:
+ 1. OpenCV (Version 4.5.5 or later)
+ 2. Numpy (Version 1.21.5 or later)
+ 3. Pillow (Version 8.4.0 or later)
+ 4. Matplotlib (Version 3.5.0 or later)
+ 5. Streamlit (Version 1.11.0 or later)
 
 
 
-
-PROCEDURE for Assignment 1 & 2 :
+PROCEDURE:
 
 1. Open MATLAB.
 2. Click on Add-Ons.
@@ -128,7 +136,7 @@ For Assignment 3:
 3. Ensure the input images are placed in the same directory as the code files. The default input images referenced in the code can be found in the test_data folder. If you wish to use your own images, update the filenames in HDR_Imaging.py accordingly to match your image file names.
 
 
-
+![instr](https://github.com/user-attachments/assets/b542668e-f377-4677-8076-4b4d97c14535)
 
 
 
@@ -136,7 +144,7 @@ For Assignment 3:
 python HDR_Imaging.py
 5. The Streamlit application will open in your default browser (or provide a URL in the terminal to access it).
 
-
+![streamlit_UI](https://github.com/user-attachments/assets/17f6c929-e98b-42b1-8a22-6587cb193c96)
 
 
 
@@ -150,7 +158,7 @@ python HDR_Imaging.py
 
 6. Use the View Debevec Output, View Robertson Output and View Mertens Output buttons to explore the HDR outputs.
 
-
+![debevec_output](https://github.com/user-attachments/assets/2d6880d9-428d-4702-bb16-830343e4f71d) ![robertson_output](https://github.com/user-attachments/assets/7133b20e-cc64-4d41-8880-7c27ad14fca5) ![mertens_output](https://github.com/user-attachments/assets/12322f30-9c48-48fe-8186-f007c1876129)
 
 
 

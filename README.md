@@ -8,7 +8,10 @@
 
 Matlab Software (Version used: 2024b)
 
-MATLAB Add-Ons: (1)Image Processing Toolbox  (2)Deep Learning Toolbox  (3)Parallel Computing Toolbox
+MATLAB Add-Ons: 
+- Image Processing Toolbox
+- Deep Learning Toolbox
+- Parallel Computing Toolbox
 
 Python (Version used: 3.8.0)
 

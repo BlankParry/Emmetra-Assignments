@@ -6,6 +6,7 @@ Contains the code and documentation for the Image processing assignments provide
 PREREQUISITES:
 
 Matlab Version: MATLAB 2019a or higher
+
 MATLAB Add-Ons:
  1.Image Processing Toolbox
  2.Deep Learning Toolbox

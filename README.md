@@ -12,7 +12,12 @@ MATLAB Add-Ons: (1)Image Processing Toolbox  (2)Deep Learning Toolbox  (3)Parall
 
 Python (Version used: 3.8.0)
 
-Required Python Libraries: OpenCV (Version used: 4.10.0.84 ), Numpy (Version used: 1.24.4), Pillow (Version used: 10.4.0 ), Matplotlib (Version used: 3.7.5 ), Streamlit (Version used: 1.40.1)
+Required Python Libraries: 
+- OpenCV (Version used: 4.10.0.84 )
+- Numpy (Version used: 1.24.4)
+- Pillow (Version used: 10.4.0 )
+- Matplotlib (Version used: 3.7.5 )
+- Streamlit (Version used: 1.40.1)
 
 
 

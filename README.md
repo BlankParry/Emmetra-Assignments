@@ -6,7 +6,7 @@
 
 **PREREQUISITES:**
 
-Matlab Software (Version used: 2024b)
+Matlab Software (Version 2019a or higher)
 
 MATLAB Add-Ons: 
 - Image Processing Toolbox
@@ -17,11 +17,11 @@ Python Version Required:
 Python 3.8.0 or higher
 
 Required Python Libraries: 
-- OpenCV (Version used: 4.10.0.84 )
-- Numpy (Version used: 1.24.4)
-- Pillow (Version used: 10.4.0 )
-- Matplotlib (Version used: 3.7.5 )
-- Streamlit (Version used: 1.40.1)
+- OpenCV (Version used: 4.10.0.84 ) or higher
+- Numpy (Version used: 1.24.4) or higher
+- Pillow (Version used: 10.4.0 ) or higher
+- Matplotlib (Version used: 3.7.5 ) or higher
+- Streamlit (Version used: 1.40.1) or higher
 
 
 

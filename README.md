@@ -137,6 +137,7 @@ Required Python Libraries:
 **For Assignment 3:**
 
 1. Clone or download the project.
+
 (To clone run `git clone https://github.com/BlankParry/Emmetra-Assignments` in your terminal/command prompt).
 
 2. Open a terminal or command prompt, navigate to the project directory, and run:

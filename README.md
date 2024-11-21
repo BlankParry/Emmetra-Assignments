@@ -171,7 +171,7 @@ Required Python Libraries:
 
 
 
-6. Use the **View Debevec Output**, **View Robertson Output** and **View Mertens Output** buttons to explore the HDR outputs.
+7. Use the **View Debevec Output**, **View Robertson Output** and **View Mertens Output** buttons to explore the HDR outputs.
 
 ![debevec_output](https://github.com/user-attachments/assets/2d6880d9-428d-4702-bb16-830343e4f71d) ![robertson_output](https://github.com/user-attachments/assets/7133b20e-cc64-4d41-8880-7c27ad14fca5) ![mertens_output](https://github.com/user-attachments/assets/12322f30-9c48-48fe-8186-f007c1876129)
 

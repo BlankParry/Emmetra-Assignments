@@ -6,25 +6,28 @@
 
 **PREREQUISITES:**
 
-Matlab Version: MATLAB 2019a or higher
+Matlab Software (Version used: 2024b)
 
 MATLAB Add-Ons:
- 1. Image Processing Toolbox
- 2. Deep Learning Toolbox
- 3. Parallel Computing Toolbox
+  1.Image Processing Toolbox
+  2.Deep Learning Toolbox
+  3.Parallel Computing Toolbox
 
-Python Version: Python 3.8 or later
+Python (Version used: 3.8.0)
 
 Required Python Libraries:
- 1. OpenCV (Version 4.5.5 or later)
- 2. Numpy (Version 1.21.5 or later)
- 3. Pillow (Version 8.4.0 or later)
- 4. Matplotlib (Version 3.5.0 or later)
- 5. Streamlit (Version 1.11.0 or later)
+  1.OpenCV (Version used: 4.10.0.84 )
+  2.Numpy (Version used: 1.24.4)
+  3.Pillow (Version used: 10.4.0 )
+  4.Matplotlib (Version used: 3.7.5 )
+  5.Streamlit (Version used: 1.40.1)
+
 
 
 
 **PROCEDURE:**
+
+**MATLAB Setup**
 
 1. Open MATLAB.
 2. Click on Add-Ons.

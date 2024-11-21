@@ -3,7 +3,7 @@ Contains the code and documentation for the Image processing assignments provide
 
 
 
-PREREQUISITES
+PREREQUISITES:
 
 Matlab Version: MATLAB 2019a or higher
 MATLAB Add-Ons:
@@ -19,7 +19,7 @@ PROCEDURE
 Assignment 1 & 2 :
 Open MATLAB.
 Click on Add-Ons.
-https://media.discordapp.net/attachments/1198946806978052167/1309124498175430676/image.png?ex=674070b2&is=673f1f32&hm=6a675bc3a439f5501e18b7d6040460c2a0c450d7ec593d81fab3c8adc62e5eb6&=&format=webp&quality=lossless&width=883&height=112
+![addon](https://github.com/user-attachments/assets/9f34f9ed-9ec7-4241-9fb1-c3c79493b6fe)
 
 
 
@@ -27,17 +27,17 @@ https://media.discordapp.net/attachments/1198946806978052167/1309124498175430676
 Search for the required toolboxes in the search bar and Install:
 (a)Image Processing Toolbox
 
-
+![iptb](https://github.com/user-attachments/assets/6906e831-3672-4d90-a08c-b9a70e73a2f6)
 
 
 (b)Deep Learning Toolbox
 
+![dltb](https://github.com/user-attachments/assets/7a266060-4384-4ea7-890c-60ba29566d6a)
 
 
+(c)Parallel Computing Toolbox    
 
-    (c)Parallel Computing Toolbox
-
-
+![pctb](https://github.com/user-attachments/assets/725c0581-04ec-48b1-9d4b-beb93c8556b6)
 
 
 
@@ -45,13 +45,13 @@ Search for the required toolboxes in the search bar and Install:
 Close the Add-on Explorer.
 Open the respective file containing the code and click on Run in the Editor tab.
 
-
+![runar](https://github.com/user-attachments/assets/4d991cf1-7576-4969-baaf-d0e660a8ef0e)
 
 
 
 For Assignment 1:
 
-
+![as1base](https://github.com/user-attachments/assets/755a7204-8e90-4377-a9be-5a457eda513b)
 
 
 
@@ -60,7 +60,7 @@ For Assignment 1:
 Click on load image and upload the RAW image from your system directory
 
 
-
+![as1load](https://github.com/user-attachments/assets/7557b04b-0c36-4cda-8b51-b9e3c3605826)
 
 
 
@@ -77,7 +77,7 @@ Click on load image and upload the RAW image from your system directory
 Click on demosaic and adjust the parameters through the sliders according to your desired output 
 
 
-
+![as1out](https://github.com/user-attachments/assets/52d76ee2-e2df-4419-b2f8-9b9ab6f5ad88)
 
 
 

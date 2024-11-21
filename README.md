@@ -147,9 +147,9 @@ Required Python Libraries:
 
 3. The default input images referenced in the code can be found in the **test-data** folder. If you wish to use your own images, update the filenames in **HDR_Imaging.py** accordingly to match your image file names.
 
-![instr](https://github.com/user-attachments/assets/409ce890-4ff8-4471-9b8e-550e2cf6604e)
+![instr](https://github.com/user-attachments/assets/3aa5c034-523f-4481-9cc0-3ff32af3592d)
 
-
+(ENSURE THAT THE IMAGE FILES ARE PRESENT IN THE SAME DIRECTORY AS THE **HDR_Imaging.py** FILE. IF NOT, USE ABSOLUTE/RELATIVE FILE PATHS TO REFERENCE THE IMAGES IN YOUR CODE.)
 
 
 
@@ -171,7 +171,7 @@ Required Python Libraries:
 
 
 
-6. Use the View Debevec Output, View Robertson Output and View Mertens Output buttons to explore the HDR outputs.
+6. Use the **View Debevec Output**, **View Robertson Output** and **View Mertens Output** buttons to explore the HDR outputs.
 
 ![debevec_output](https://github.com/user-attachments/assets/2d6880d9-428d-4702-bb16-830343e4f71d) ![robertson_output](https://github.com/user-attachments/assets/7133b20e-cc64-4d41-8880-7c27ad14fca5) ![mertens_output](https://github.com/user-attachments/assets/12322f30-9c48-48fe-8186-f007c1876129)
 

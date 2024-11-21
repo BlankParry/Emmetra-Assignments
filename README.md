@@ -102,7 +102,7 @@ For Assignment 2:
 
 
 
-Click on upload RAW Image and select the desired file from your system
+1. Click on upload RAW Image and select the desired file from your system
 
 
 
@@ -113,7 +113,7 @@ Click on upload RAW Image and select the desired file from your system
 
 
 
-Click on OK and then Generate Output to view the results (output will take around 8-10 seconds to process)
+2. Click on OK and then Generate Output to view the results (output will take around 8-10 seconds to process)
 
 
 ![as2out](https://github.com/user-attachments/assets/d63f26d3-faa9-457b-9b3c-2385b222cea9)

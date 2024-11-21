@@ -7,24 +7,24 @@ PREREQUISITES:
 
 Matlab Version: MATLAB 2019a or higher
 MATLAB Add-Ons:
-1.Image Processing Toolbox
-2.Deep Learning Toolbox
-3.Parallel Computing Toolbox
+ 1.Image Processing Toolbox
+ 2.Deep Learning Toolbox
+ 3.Parallel Computing Toolbox
 
 
 
 
-PROCEDURE
+PROCEDURE for Assignment 1 & 2 :
 
-Assignment 1 & 2 :
-Open MATLAB.
-Click on Add-Ons.
+1. Open MATLAB.
+2. Click on Add-Ons.
 ![addon](https://github.com/user-attachments/assets/9f34f9ed-9ec7-4241-9fb1-c3c79493b6fe)
 
 
 
 
-Search for the required toolboxes in the search bar and Install:
+3. Search for the required toolboxes in the search bar and Install:
+   
 (a)Image Processing Toolbox
 
 ![iptb](https://github.com/user-attachments/assets/6906e831-3672-4d90-a08c-b9a70e73a2f6)
@@ -42,8 +42,8 @@ Search for the required toolboxes in the search bar and Install:
 
 
  
-Close the Add-on Explorer.
-Open the respective file containing the code and click on Run in the Editor tab.
+4. Close the Add-on Explorer.
+5. Open the respective file containing the code and click on Run in the Editor tab.
 
 ![runar](https://github.com/user-attachments/assets/4d991cf1-7576-4969-baaf-d0e660a8ef0e)
 
@@ -57,7 +57,7 @@ For Assignment 1:
 
 
 
-Click on load image and upload the RAW image from your system directory
+1. Click on load image and upload the RAW image from your system directory
 
 
 ![as1load](https://github.com/user-attachments/assets/7557b04b-0c36-4cda-8b51-b9e3c3605826)
@@ -74,7 +74,7 @@ Click on load image and upload the RAW image from your system directory
 
 
 
-Click on demosaic and adjust the parameters through the sliders according to your desired output 
+2. Click on demosaic and adjust the parameters through the sliders according to your desired output 
 
 
 ![as1out](https://github.com/user-attachments/assets/52d76ee2-e2df-4419-b2f8-9b9ab6f5ad88)
@@ -92,6 +92,7 @@ Click on demosaic and adjust the parameters through the sliders according to you
 
 For Assignment 2:
 
+![as2base](https://github.com/user-attachments/assets/e4f9342b-3f10-4f47-acec-cbc0e2ac9064)
 
 
 
@@ -104,7 +105,7 @@ Click on upload RAW Image and select the desired file from your system
 
 
 
-
+![as2load](https://github.com/user-attachments/assets/c744f852-a6dc-4518-b429-cd25abb1e298)
 
 
 
@@ -114,7 +115,7 @@ Click on upload RAW Image and select the desired file from your system
 Click on OK and then Generate Output to view the results (output will take around 8-10 seconds to process)
 
 
-
+![as2out](https://github.com/user-attachments/assets/d63f26d3-faa9-457b-9b3c-2385b222cea9)
 
 
 

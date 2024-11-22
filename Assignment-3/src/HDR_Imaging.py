@@ -7,9 +7,9 @@ import streamlit as st
 import os
 
 # Input image filenames
-#img_fn = ["metro-1.jpeg", "metro-2.jpeg", "metro-3.jpeg"]
-#img_fn = ["room-1.jpg", "room-2.jpg", "room-3.jpeg"]
-img_fn = ["terrace-1.jpeg", "terrace-2.jpeg", "terrace-3.jpg"]
+#img_fn = ["../test-data/metro-1.jpeg", "../test-data/metro-2.jpeg", "../test-data/metro-3.jpeg"]
+#img_fn = ["../test-data/room-1.jpg", "../test-data/room-2.jpg", "../test-data/room-3.jpeg"]
+img_fn = ["../test-data/terrace-1.jpeg", "../test-data/terrace-2.jpeg", "../test-data/terrace-3.jpg"]
 img_list = [cv.imread(fn) for fn in img_fn]
 exposure_times = np.array([0.04, 0.005, 0.01], dtype=np.float32)
 

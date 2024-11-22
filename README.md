@@ -141,7 +141,7 @@ Required Python Libraries:
    (To clone run `git clone https://github.com/BlankParry/Emmetra-Assignments` in your terminal/command prompt).
 
 
-2. In your terminal/command prompt, navigate to the project directory using `cd '.\Emmetra-Assignments\Assignment-3\'`
+2. In your terminal/command prompt, navigate to the project directory using `cd Emmetra-Assignments\Assignment-3\`
    
    Then run `pip install -r requirements.txt` to install all the required libraries.
 

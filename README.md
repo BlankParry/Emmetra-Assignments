@@ -141,7 +141,7 @@ Required Python Libraries:
    (To clone run `git clone https://github.com/BlankParry/Emmetra-Assignments` in your terminal/command prompt).
 
 
-2. In your terminal/command prompt, navigate to the project directory using `cd Emmetra-Assignments\Assignment-3\`
+2. In your terminal/command prompt, navigate to the project directory using `cd Emmetra-Assignments\Assignment-3`
    
    Then run `pip install -r requirements.txt` to install all the required libraries.
 
@@ -153,7 +153,7 @@ Required Python Libraries:
 
 
 
-4. Run `cd '.\src\'` in terminal/command prompt to navigate to the source code directory.
+4. Run `cd src` in terminal/command prompt to navigate to the source code directory.
 
 5. Execute the main script (HDR_Imaging.py) using the command `python HDR_Imaging.py`, which automatically starts the Streamlit application.
 

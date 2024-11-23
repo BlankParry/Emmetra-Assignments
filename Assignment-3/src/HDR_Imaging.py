@@ -153,10 +153,5 @@ def main():
         if st.button('View Mertens Output'):
             display_output('fusion_mertens.jpg', 'Fusion Mertens HDR Image')
 
-# Run the Streamlit app only if executed directly
 if __name__ == "__main__":
-    if not os.getenv("IS_STREAMLIT"):
-        os.environ["IS_STREAMLIT"] = "1"
-        subprocess.run(["streamlit", "run", __file__])
-    else:
-        main()
+    main()

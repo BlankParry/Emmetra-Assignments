@@ -155,7 +155,7 @@ Required Python Libraries:
 
 4. Run `cd src` in terminal/command prompt to navigate to the source code directory.
 
-5. Execute the main script (HDR_Imaging.py) using the command `python HDR_Imaging.py`, which automatically starts the Streamlit application.
+5. Run the command `python -m streamlit run HDR_Imaging.py` in the terminal/command prompt to execute **HDR_Imaging.py**.
 
 6. The Streamlit application will open in your default browser (or provide a URL in the terminal to access it).
 

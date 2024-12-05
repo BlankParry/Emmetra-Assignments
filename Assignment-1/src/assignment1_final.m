@@ -16,17 +16,17 @@ classdef assignment1_final < matlab.apps.AppBase
         DemosaicButton             matlab.ui.control.Button 
         ImageAxes                  matlab.ui.control.UIAxes
     end
-    
+
     properties (Access = private)
         BayerImage          % Bayer image data
         ColorImage          % Demosaiced image data
         ProcessedImage      % Processed image data
     end
-    
+
     methods (Access = private)
         
         % Load Image Button pushed function
-        function LoadImageButtonPushed(app, event)
+        function LoadImageButtonPushed(app, ~)
             [file, path] = uigetfile('*.raw', 'Select the RAW image');
             if isequal(file, 0)
                 return;
@@ -42,27 +42,27 @@ classdef assignment1_final < matlab.apps.AppBase
         end
         
         % Demosaic Button pushed function
-        function DemosaicButtonPushed(app, event)
+        function DemosaicButtonPushed(app, ~)
             if isempty(app.BayerImage)
                 return;
             end
-            
+
             % Apply Demosaic
             app.ColorImage = demosaic(uint16(app.BayerImage * 65535), 'grbg');
             app.ColorImage = double(app.ColorImage) / 65535;
-            
+
             % Display the color image
             imshow(app.ColorImage, 'Parent', app.ImageAxes);
         end
         
         % Apply Button pushed function
-        function ApplyButtonPushed(app, event)
+        function ApplyButtonPushed(app, ~)
             if isempty(app.ColorImage)
                 return;
             end
-            
+
             color_image = app.ColorImage;
-            
+
             % Apply Quick Color Balance
             R = color_image(:, :, 1);
             G = color_image(:, :, 2);
@@ -70,7 +70,7 @@ classdef assignment1_final < matlab.apps.AppBase
             R = R * (mean(G(:)) / mean(R(:)));
             B = B * (mean(G(:)) / mean(B(:)));
             color_image = cat(3, R, G, B);
-            
+
             % Apply White Balance
             wb_factor = app.WhiteBalanceSlider.Value;
             gray_world_factor = mean(G(:));
@@ -78,30 +78,31 @@ classdef assignment1_final < matlab.apps.AppBase
             G = G * wb_factor;
             B = B * (gray_world_factor / mean(B(:))) * wb_factor;
             white_balanced_image = cat(3, R, G, B);
-            
+
             % Apply Denoise
             denoise_strength = app.DenoiseSlider.Value;
             denoised_image = imgaussfilt(white_balanced_image, denoise_strength);
-            
+
             % Apply Gamma Correction
             gamma_value = app.GammaSlider.Value;
             gamma_corrected_image = denoised_image .^ (1 / gamma_value);
-            gamma_corrected_image = uint8(255 * gamma_corrected_image);
-            
+
             % Apply Sharpening
             sharpen_amount = app.SharpenSlider.Value;
             sharpened_image = imsharpen(gamma_corrected_image, 'Amount', sharpen_amount);
-            
+
             % Enhance contrast and brightness
             sharpened_image = imadjust(sharpened_image, stretchlim(sharpened_image, [0.01 0.99]), []);
-            
-            % Improve color saturation using hsv color space
+
+            % Improve color saturation using HSV color space
             hsv_image = rgb2hsv(sharpened_image);
             hsv_image(:, :, 2) = hsv_image(:, :, 2) * 1.2;
             hsv_image(:, :, 3) = hsv_image(:, :, 3) * 1.1;
             sharpened_image = hsv2rgb(hsv_image);
-            app.ProcessedImage = sharpened_image;
-            
+
+            % Convert to 24-bit RGB (uint8)
+            app.ProcessedImage = uint8(sharpened_image * 255);
+
             % Display the processed image
             imshow(app.ProcessedImage, 'Parent', app.ImageAxes);
         end
@@ -120,7 +121,7 @@ classdef assignment1_final < matlab.apps.AppBase
 
             % Create LoadImageButton
             app.LoadImageButton = uibutton(app.UIFigure, 'push');
-            app.LoadImageButton.ButtonPushedFcn = createCallbackFcn(app, @LoadImageButtonPushed, true);
+            app.LoadImageButton.ButtonPushedFcn = @(~, ~)app.LoadImageButtonPushed();
             app.LoadImageButton.Position = [25 520 150 30];
             app.LoadImageButton.Text = 'Load Image';
             app.LoadImageButton.FontWeight = 'bold';
@@ -176,7 +177,7 @@ classdef assignment1_final < matlab.apps.AppBase
 
             % Create ApplyButton
             app.ApplyButton = uibutton(app.UIFigure, 'push');
-            app.ApplyButton.ButtonPushedFcn = createCallbackFcn(app, @ApplyButtonPushed, true);
+            app.ApplyButton.ButtonPushedFcn = @(~, ~)app.ApplyButtonPushed();
             app.ApplyButton.Position = [25 150 150 30];
             app.ApplyButton.Text = 'Apply';
             app.ApplyButton.FontWeight = 'bold';
@@ -184,7 +185,7 @@ classdef assignment1_final < matlab.apps.AppBase
 
             % Create DemosaicButton
             app.DemosaicButton = uibutton(app.UIFigure, 'push'); % New Demosaic Button
-            app.DemosaicButton.ButtonPushedFcn = createCallbackFcn(app, @DemosaicButtonPushed, true);
+            app.DemosaicButton.ButtonPushedFcn = @(~, ~)app.DemosaicButtonPushed();
             app.DemosaicButton.Position = [25 110 150 30];
             app.DemosaicButton.Text = 'Demosaic';
             app.DemosaicButton.FontWeight = 'bold';
@@ -202,16 +203,15 @@ classdef assignment1_final < matlab.apps.AppBase
 
         % Construct app
         function app = assignment1_final
-            
 
             % Create UIFigure and components
-            createComponents(app)
+            app.createComponents();
 
             % Register the app with App Designer
-            registerApp(app, app.UIFigure)
+            registerApp(app, app.UIFigure);
 
             if nargout == 0
-                clear app
+                clear app;
             end
         end
 
@@ -219,7 +219,7 @@ classdef assignment1_final < matlab.apps.AppBase
         function delete(app)
 
             % Delete UIFigure when app is deleted
-            delete(app.UIFigure)
+            delete(app.UIFigure);
         end
     end
 end

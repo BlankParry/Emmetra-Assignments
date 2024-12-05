@@ -64,7 +64,15 @@ function DenoiseSharpnessUIApp
         appData.denoised_images.dncnn = applyDnCNN(appData.white_balanced_image);
         appData.sharpened_image = applyLaplacianFilter(appData.white_balanced_image);
 
-        % Compute SNR for each method, including white balanced
+        % Convert all images to 24-bit RGB format
+        appData.white_balanced_image = convertTo24Bit(appData.white_balanced_image);
+        appData.denoised_images.median = convertTo24Bit(appData.denoised_images.median);
+        appData.denoised_images.bilateral = convertTo24Bit(appData.denoised_images.bilateral);
+        appData.denoised_images.gaussian = convertTo24Bit(appData.denoised_images.gaussian);
+        appData.denoised_images.dncnn = convertTo24Bit(appData.denoised_images.dncnn);
+        appData.sharpened_image = convertTo24Bit(appData.sharpened_image);
+
+        % Compute SNR for each method
         appData.snr_values.white_balanced = computeAllSNR(appData.white_balanced_image);
         appData.snr_values.median = computeAllSNR(appData.denoised_images.median);
         appData.snr_values.bilateral = computeAllSNR(appData.denoised_images.bilateral);
@@ -119,11 +127,17 @@ function DenoiseSharpnessUIApp
             end
         end
     end
+
+    function img = convertTo24Bit(img)
+        img = uint8(img * 255); % Scale to [0, 255] and convert to 8-bit per channel
+    end
 end
 
 % --------------------------------------------------------------------
 % Helper Functions
 % --------------------------------------------------------------------
+
+% (Helper functions like processRawImage, applyMedianFilter, etc. remain the same)
 
 function [white_balanced_image] = processRawImage(file_path)
     % Load and preprocess the Bayer RAW image
@@ -187,12 +201,29 @@ function snrValues = computeAllSNR(image)
 end
 
 function snrValue = computeSNR(image, roi)
+    % Extract the region of interest (ROI)
     region = image(roi(1):roi(2), roi(3):roi(4), :);
+    % Convert the region to double for numerical operations
+    region = double(region);
+    % Compute SNR
     snrValue = mean(region(:)) / std(region(:));
 end
 
+
 function edgeStrength = computeEdgeStrength(image)
-    gray_image = rgb2gray(image);
+    % Ensure the input image is normalized to [0, 1]
+    image = double(image) / 255;
+
+    % Convert to grayscale if the image is RGB
+    if size(image, 3) == 3
+        gray_image = rgb2gray(image);
+    else
+        gray_image = image;
+    end
+
+    % Compute gradients
     [Gx, Gy] = imgradientxy(gray_image);
+
+    % Compute edge strength as the mean gradient magnitude
     edgeStrength = mean(sqrt(Gx.^2 + Gy.^2), 'all');
 end
